@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #f2f2f2;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  height: 800px;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.block .moving {
+  perspective: 1000px;
+}
+
+.block h2 {
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 0px 5px 5px black;
+}
+
+.animation-container {
+  position: relative;
+  left: 20%;
+}
+.phone_container {
+  position: relative;
+  z-index: 10;
+}
+.animate {
+  position: absolute;
+}
+
+
+polygon {
+  mix-blend-mode: screen;
+}
+
+.isolate {
+  isolation: isolate;
+}
+
+img {
+  background-blend-mode: multiply;
+
+}
+.up {
+  top: 30%;
+  left: -20%;
+}
+
+.left {
+  left: -10%;
+  top: -5%;
+}
+
+.down {
+  bottom: 0;
+  right: -10%;
+}
+
+.right {
+  top: 45%;
+  right: -5%;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -135px;
+  left: 41px;
+  max-width: 100%;
+
+}
+.phone {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(100deg);
+  }
+  100% {
+    transform: translateY(0deg);
+  }
+}
