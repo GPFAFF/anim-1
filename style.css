@@ -16,8 +16,6 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   height: 800px;
-  background-attachment: fixed;
-  background-position: 50% 50%;
 }
 
 .container {
@@ -45,27 +43,16 @@ img {
   position: relative;
   left: 20%;
 }
+
 .phone_container {
   position: relative;
   z-index: 10;
 }
+
 .animate {
   position: absolute;
 }
 
-
-polygon {
-  mix-blend-mode: screen;
-}
-
-.isolate {
-  isolation: isolate;
-}
-
-img {
-  background-blend-mode: multiply;
-
-}
 .up {
   top: 30%;
   left: -20%;
@@ -88,11 +75,11 @@ img {
 
 .shadow {
   position: absolute;
-  bottom: -135px;
+  bottom: -70px;
   left: 41px;
   max-width: 100%;
-
 }
+
 .phone {
   max-width: 100%;
   width: 300px;
