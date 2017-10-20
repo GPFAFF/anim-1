@@ -130,9 +130,10 @@
               image.style.transform = parallaxLeft;
               image.style.transition = `1s ease-in`;
           } else if (image.classList.contains('phone')) {
-              const parallaxPhone = 'translateX(-30px) translateY(50px)'
-              image.style.transform = parallaxPhone;
-              image.style.transition = `1s ease-in`;
+              const parallaxPhone = 'bounce .7s ease-in infinite'
+              image.style.animation = parallaxPhone;
+              image.style.animationFillMode = "forwards";
+              image.style.animationDirection = "alternate";
           }
         },
       );

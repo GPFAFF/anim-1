@@ -84,14 +84,16 @@ img {
   max-width: 100%;
   width: 300px;
   height: auto;
-  animation: bounce 1s linear infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(100deg);
+  from {
+    transform: translateY(0);
   }
-  100% {
-    transform: translateY(0deg);
+  to {
+    transform: translateY(6px);
   }
 }
+
